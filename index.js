@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   activityIndicator: {
-    flex: 1
+    // flex: 1
   }
 });
 
