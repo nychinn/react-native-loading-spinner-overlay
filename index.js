@@ -16,7 +16,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View, Text, Modal, ActivityIndicator } from 'react-native';
+import { StyleSheet, View, Text, Modal, ActivityIndicator, TouchableOpacity } from 'react-native';
 
 const transparent = 'transparent';
 const styles = StyleSheet.create({
@@ -48,9 +48,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute'
   },
-  textContent: {
+  textContentWrap: {
     top: 80,
-    height: 50,
+    // height: 50,
+  },
+  textContent: {
     fontSize: 20,
     fontWeight: 'bold'
   },
@@ -127,11 +129,13 @@ export default class Spinner extends React.PureComponent {
           />
         )}
         <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
-          <Text style={[styles.textContent, this.props.textStyle]}>
-            {this.state.textContent}
-          </Text>
-
-          { this.props.children }
+          <View style={[styles.textContentWrap, this.props.textWrapStyle]}>
+            <Text style={[styles.textContent, this.props.textStyle]}>
+              {this.state.textContent}
+            </Text>
+            { this.props.children }
+          </View>
+          
         </View>
       </View>
     );
