@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'absolute'
+    position: 'absolute',
+    backgroundColor: 'blue'
   },
   textContentWrap: {
     top: 80,
