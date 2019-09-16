@@ -131,6 +131,7 @@ export default class Spinner extends React.PureComponent {
             {this.state.textContent}
           </Text>
         </View>
+        { this.props.children }
       </View>
     );
   }
