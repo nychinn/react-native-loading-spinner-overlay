@@ -130,8 +130,9 @@ export default class Spinner extends React.PureComponent {
           <Text style={[styles.textContent, this.props.textStyle]}>
             {this.state.textContent}
           </Text>
+
+          { this.props.children }
         </View>
-        { this.props.children }
       </View>
     );
   }
