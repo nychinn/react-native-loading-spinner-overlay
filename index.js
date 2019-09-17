@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
   textContentWrap: {
     top: 80,
     // height: 50,
-    backgroundColor: 'blue'
   },
   textContent: {
     fontSize: 20,
@@ -132,7 +131,6 @@ export default class Spinner extends React.PureComponent {
         <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
           <View style={[styles.textContentWrap, this.props.textWrapStyle]}>
             <Text style={[styles.textContent, this.props.textStyle]}>{this.state.textContent}</Text>
-            <TouchableOpacity><Text>Test Button</Text></TouchableOpacity>
             { this.props.children }
           </View>
         </View>
