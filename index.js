@@ -46,19 +46,18 @@ const styles = StyleSheet.create({
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'absolute',
-    backgroundColor: 'blue'
+    position: 'absolute'
   },
   textContentWrap: {
     top: 80,
-    // height: 50,
+    height: 50,
   },
   textContent: {
     fontSize: 20,
     fontWeight: 'bold'
   },
   activityIndicator: {
-    // flex: 1
+    flex: 1
   }
 });
 
@@ -131,12 +130,9 @@ export default class Spinner extends React.PureComponent {
         )}
         <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
           <View style={[styles.textContentWrap, this.props.textWrapStyle]}>
-            <Text style={[styles.textContent, this.props.textStyle]}>
-              {this.state.textContent}
-            </Text>
+            <Text style={[styles.textContent, this.props.textStyle]}>{this.state.textContent}</Text>
             { this.props.children }
           </View>
-          
         </View>
       </View>
     );
