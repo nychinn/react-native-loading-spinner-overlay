@@ -132,7 +132,7 @@ export default class Spinner extends React.PureComponent {
         <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
           <View style={[styles.textContentWrap, this.props.textWrapStyle]}>
             <Text style={[styles.textContent, this.props.textStyle]}>{this.state.textContent}</Text>
-            <TouchableOpacity onPress={this.props.buttonPress} style={this.props.buttonStyle}><Text>{this.props.buttonText}</Text></TouchableOpacity>
+            <TouchableOpacity onPress={this.props.buttonPress} style={this.props.buttonStyle}><Text style={this.props.buttonTextStyle}>{this.props.buttonText}</Text></TouchableOpacity>
           </View>
         </View>
       </View>
