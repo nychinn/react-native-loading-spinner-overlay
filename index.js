@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   textContentWrap: {
     top: 80,
-    height: 50,
+    // height: 50,
   },
   textContent: {
     fontSize: 20,
