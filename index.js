@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
   },
   textContentWrap: {
     top: 80,
+    backgroundColor: 'blue'
     // height: 50,
   },
   textContent: {
